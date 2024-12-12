@@ -9,7 +9,7 @@ public class OrderProcessorThread extends Thread {
 
     @Override
     public void run() {
-        while (true) {
+        while(true) {
             try {
                 fileHandler.handleSourceDirectory();
                 Thread.sleep(3600 * 1000); // Sleep for 1 hour
