@@ -12,8 +12,9 @@ public class OrderProcessorThread extends Thread {
         while(true) {
             try {
                 fileHandler.handleSourceDirectory();
-                Thread.sleep(3600 * 1000); // Sleep for 1 hour
-            } catch (InterruptedException e) {
+                Thread.sleep(3600 * 1000);
+            } 
+            catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
