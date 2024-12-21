@@ -16,7 +16,6 @@ public class Customer {
     private String phone;
     private String address;
 
-    // Convert JSON string to Customer object using Gson
     public static Customer fromJson(String json) {
         Gson gson = new Gson();
         return gson.fromJson(json, Customer.class);
